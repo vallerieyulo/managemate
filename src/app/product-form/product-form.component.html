@@ -1,0 +1,26 @@
+<div class="products">
+    <h2>{{editId ? 'Edit Product' : 'Add Product'}}</h2>
+
+    <div class="products-form" [formGroup]="productForm">
+        <div class="basic-info">
+            <h3>Basic Information</h3>
+            <input formControlName="name" type="text" placeholder="Product name">
+            <textarea formControlName="description" name="" id="" rows="5" placeholder="Description"></textarea>
+        </div>
+
+        <div class="stock-pricing">
+            <h3>Stock & Pricing</h3>
+            <input formControlName="stock" type="number" placeholder="Stocks">
+            <input formControlName="price" type="number" placeholder="Price">
+        </div>
+    </div>
+
+    <div class="footer-actions">
+        <button class="cancel" routerLink="/products">
+            Cancel
+        </button>
+        <button class="save" (click)="saveProduct()">
+            {{editId ? 'Save Product' : 'Add Product'}}
+        </button>
+    </div>
+</div>

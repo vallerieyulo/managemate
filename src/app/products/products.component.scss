@@ -1,0 +1,96 @@
+.products{
+    padding: 30px;
+    background-color: #F9F9F9;
+    width: 100%;
+    height: calc(100vh - 85px);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.20) inset;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.20) inset;
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.20) inset;
+    display: flex;
+    flex-flow: column;
+
+    .products-table{
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+        flex: 1;
+        overflow-x: auto;
+        
+         .header-actions{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 20px;
+            padding-top: 0;
+
+            button{
+                border-radius: 15px;
+                border: none;
+                padding: 15px;
+                background-color: #ED820e;
+                color: white;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                svg{
+                    margin-right: 7px;
+                }
+                &:hover{
+                    background-color: #d3730c;
+                    transition: all 1s linear;
+                }
+            }
+         }
+
+         table{
+            width: 100%;
+            border-collapse: collapse;
+
+            thead{
+                th{
+                    border: none;
+                    border-spacing: 0;
+                    padding: 10px;
+                    text-align: left;
+                    background-color: #F9F9F9;
+                    padding: 10px;
+
+                    &:first-of-type{
+                        border-radius: 10px 0 0 0;
+                    }
+
+                    &:last-of-type{
+                        border-radius: 0 10px 0 0;
+                    }
+                }
+            }
+
+            td{
+                padding: 10px;
+                span{
+                    padding: 5px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .edit-btn{
+                    background-color: rgb(49, 153, 238);
+                    align-items: center;
+                    width: 15px;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 10px;
+                }
+
+                .delete-btn{
+                    background-color: rgb(235, 81, 81);
+                    align-items: center;
+                    width: 15px;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+         }
+    }
+}
