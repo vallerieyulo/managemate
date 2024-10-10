@@ -18,7 +18,7 @@ export class ProductService {
 
   getLastProductId(): number{
     const lastProductId = Math.max(...this.PRODUCTS.map(product => product.id))
-    return lastProductId ?? 0;
+    return lastProductId ?? 1;
   }
 
   getProductById(id: number): Product{
