@@ -1,0 +1,23 @@
+[
+ {
+ "id": 1,
+ "name": "Chair",
+ "description": "Ergonomic chair",
+ "price": 9999.99,
+ "stock": 1023
+ },
+ {
+ "id": 2,
+ "name": "Monitor",
+ "description": "Samsung monitor",
+ "price": 8999,
+ "stock": 122
+ },
+ {
+ "id": 3,
+ "name": "Speaker",
+ "description": "Edifier speakers",
+ "price": 4350,
+ "stock": 342
+ }
+]

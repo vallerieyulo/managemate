@@ -1,0 +1,23 @@
+<div class="products">
+    <h2>Products</h2>
+
+    <div class="products-table">
+        <div class="header-actions">
+            <button (click)="addProduct()">Add Product</button>
+        </div>
+
+        <table>
+            <thead>
+                <th>asd</th>
+            </thead>
+            <tbody>
+                <td>asd</td>
+            </tbody>
+        </table>
+        <ul>
+            @for (product of products; track $index) {
+                <li>{{product.name}}</li>
+            }
+           </ul>
+    </div>
+</div>

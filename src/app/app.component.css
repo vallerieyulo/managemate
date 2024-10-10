@@ -1,0 +1,11 @@
+:host{
+    background-color: #f9f9f9;
+}
+
+.flex{
+    display: flex;
+}
+
+.placeholder{
+    flex: 1;
+}

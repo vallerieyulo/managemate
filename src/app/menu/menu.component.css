@@ -1,0 +1,52 @@
+.menu{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border-right: 2px solid #F2F2F2;
+    .logo{
+        position: relative;
+        margin-bottom: 50px;
+        h1{
+            margin: 0;
+        }
+        svg{
+            position: absolute;
+            top: 3px;
+            right: -3px;
+            rotate: 135deg;
+            height: 80px;
+            width: 80px;
+        }
+    }
+
+    label{
+        color: #ABABAB;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .items{
+        list-style: none;
+        padding-inline-start: 0;
+
+        .item{
+            padding: 20px 30px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            cursor: pointer;
+            svg{
+                margin-right: 15px;
+            }
+
+            &.active,&:hover{
+                background-color: #ED820e;
+                color: white;
+                svg{
+                    fill: white;
+                }
+            }
+        }
+    }
+}
